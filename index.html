@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>padyynname — Artist</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(120deg, #050505, #111);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+/* ===== АНИМАЦИИ ===== */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes glow {
+  0% { text-shadow: 0 0 10px #ffffff20; }
+  50% { text-shadow: 0 0 30px #ffffff60; }
+  100% { text-shadow: 0 0 10px #ffffff20; }
+}
+
+/* ===== HEADER ===== */
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 70px;
+  letter-spacing: 5px;
+  margin: 0;
+  animation: fadeUp 1.2s ease, glow 4s infinite;
+}
+
+header p {
+  margin-top: 20px;
+  font-size: 22px;
+  opacity: 0.8;
+  animation: fadeUp 1.6s ease;
+}
+
+/* ===== SECTIONS ===== */
+.section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 90px 20px;
+  animation: fadeUp 1.2s ease;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 42px;
+  margin-bottom: 50px;
+}
+
+/* ===== CARDS ===== */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: #0e0e0e;
+  border-radius: 22px;
+  padding: 26px;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-14px) scale(1.02);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 22px;
+  margin: 10px 0 6px;
+}
+
+.card p {
+  font-size: 15px;
+  opacity: 0.75;
+}
+
+/* ===== RELEASE LINK ===== */
+a.release {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ===== PLAYER ===== */
+.player {
+  max-width: 700px;
+  margin: auto;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 30px 60px rgba(0,0,0,0.8);
+}
+
+/* ===== SOCIALS ===== */
+.socials {
+  text-align: center;
+}
+
+.socials a {
+  display: inline-block;
+  margin: 12px;
+  padding: 18px 38px;
+  border-radius: 50px;
+  background: #ffffff12;
+  color: #fff;
+  text-decoration: none;
+  font-size: 17px;
+  transition: all 0.35s;
+}
+
+.socials a:hover {
+  background: #ffffff35;
+  transform: scale(1.1);
+}
+
+/* ===== FOOTER ===== */
+footer {
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>PADYYNNAME</h1>
+  <p>рэп • хип-хоп • независимый артист</p>
+</header>
+
+<section class="section">
+<h2>Обо мне</h2>
+<div class="cards">
+  <div class="card">
+    <h3>Артист</h3>
+    <p>padyynname — рэп и хип-хоп артист. Атмосферный звук и честная подача.</p>
+  </div>
+  <div class="card">
+    <h3>Жанр</h3>
+    <p>Rap / Hip-Hop / Trap / Experimental</p>
+  </div>
+  <div class="card">
+    <h3>Релизы</h3>
+    <p>Синглы и коллаборации 2024–2025</p>
+  </div>
+</div>
+</section>
+
+<section class="section">
+<h2>Яндекс Музыка</h2>
+
+<div class="player">
+  <!-- ЯНДЕКС МУЗЫКА: артист -->
+  <iframe 
+    src="https://music.yandex.ru/iframe/#artist/1723458493"
+    width="100%" 
+    height="400" 
+    frameborder="0">
+  </iframe>
+</div>
+
+</section>
+
+<section class="section">
+<h2>Релизы</h2>
+<div class="cards">
+
+<a class="release" href="https://music.yandex.ru" target="_blank">
+<div class="card">
+  <img src="https://is5-ssl.mzstatic.com/image/thumb/Music126/v4/6f/44/7c/6f447c3a-6d89-4b4f-bf59-3fd9f4a1a2b7/600x600bb.jpg">
+  <h3>Amnesia</h3>
+  <p>Single • 2024</p>
+</div>
+</a>
+
+<a class="release" href="https://music.yandex.ru" target="_blank">
+<div class="card">
+  <img src="https://is5-ssl.mzstatic.com/image/thumb/Music126/v4/95/5f/87/955f87b0-8c9c-43c5-8c58-71a8f9c4e1cc/600x600bb.jpg">
+  <h3>Slime Sound</h3>
+  <p>feat. Lilvvil • 2025</p>
+</div>
+</a>
+
+</div>
+</section>
+
+<section class="section socials">
+<h2>Соцсети</h2>
+<a href="https://www.tiktok.com/@padnme?_r=1&_t=ZS-93e2AUhxBLd" target="_blank">TikTok</a>
